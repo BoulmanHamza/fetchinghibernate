@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.technomaker.demohibernate.simple.Formation" table="FORMATIONS">
+		<id name="id" column="FORMATION_ID">
+			<generator class="increment"/>
+		</id>
+		<property name="titre" column="TITRE"/>
+		<set name="participants" cascade="all" lazy="true" fetch="select">
+			<key column="FORMATION_ID"/>
+			<one-to-many class="com.technomaker.demohibernate.simple.Participant" />
+		</set>
+	</class>
+</hibernate-mapping>

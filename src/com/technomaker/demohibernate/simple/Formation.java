@@ -1,11 +1,12 @@
 package com.technomaker.demohibernate.simple;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Formation {
 	private Long id;
 	private String titre;
-	private Set<Participant> participants;
+	private Set<Participant> participants=new HashSet<Participant>();
 	public Formation() {
 		super();
 	}

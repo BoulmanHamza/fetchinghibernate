@@ -37,6 +37,12 @@ public class Participant {
 	public void setFormation(Formation formation) {
 		this.formation = formation;
 	}
+	@Override
+	public String toString() {
+		return "Participant [id=" + id + ", nom=" + nom +"]";
+	}
+	
+	
 	
 	
 	

@@ -7,7 +7,7 @@
 			<generator class="increment"/>
 		</id>
 		<property name="titre" column="TITRE"/>
-		<set name="participants" cascade="all" lazy="true" fetch="select">
+		<set name="participants" cascade="all" lazy="false" fetch="select">
 			<key column="FORMATION_ID"/>
 			<one-to-many class="com.technomaker.demohibernate.simple.Participant" />
 		</set>

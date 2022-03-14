@@ -10,7 +10,7 @@
 		
 		<many-to-one name="formation" column="FORMATION_ID"
 		class="com.technomaker.demohibernate.simple.Formation"
-		cascade="persist"
+		cascade="delete"
 		/>
 	</class>
 </hibernate-mapping>
